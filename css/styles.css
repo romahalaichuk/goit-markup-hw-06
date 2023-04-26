@@ -72,6 +72,10 @@ h1 {
   --border: #ececec;
   --border-portfolio: #eeeeee;
   --modal-background: rgba(0, 0, 0, 0.2);
+  --newsletter-color-font: rgba(255, 255, 255, 0.6);
+  --newsletter-border: rgba(255, 255, 255, 0.302);
+  --shadow-teamat: rgba(0, 0, 0, 0.25);
+  --transition-active: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-contacts {
   display: flex;
@@ -735,6 +739,13 @@ body {
   background-color: var(--mu-hero);
   padding: 60px 0;
 }
+.save-newsletter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  color: var(--main-background-color);
+  margin: 0px;
+}
 
 .address {
   display: flex;
@@ -768,6 +779,64 @@ body {
 }
 .projects-link {
   display: block;
+}
+.frame-newsletter {
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--newsletter-border);
+  border-radius: 4px;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--mu-hero);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  color: var(--main-background-color);
+  outline: none;
+}
+.frame-newsletter::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--newsletter-color-font);
+  padding-left: 16px;
+}
+.btn-newsletter {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--focus-hover-background-color);
+  border: 2px solid var(--focus-hover-background-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--main-background-color);
+  box-shadow: 0px 4px 4px var(--shadow-teamat);
+}
+.icon-newsletter {
+  fill: var(--main-background-color);
+  transition: transform var(--transition-active);
+}
+.btn-newsletter:hover {
+  cursor: pointer;
+}
+.btn-newsletter:hover .icon-newsletter {
+  transform: rotate(360deg);
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsleter-footer {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
 }
 
 .project-links:focus .project-overlay {
