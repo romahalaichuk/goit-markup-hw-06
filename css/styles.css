@@ -740,6 +740,7 @@ body {
   padding: 60px 0;
 }
 .save-newsletter {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
@@ -828,27 +829,21 @@ body {
 .btn-newsletter:hover .icon-newsletter {
   transform: scale(1.3);
 }
-/*transform: rotate(360deg) */
+
 .newsletter {
+  padding-bottom: 72px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.newsleter-footer {
-  margin-top: 12px;
-  margin-bottom: 20px;
-  margin-left: 70px;
 
+.newsleter-footer {
+  padding-left: 78px;
   display: flex;
   gap: 12px;
   align-items: flex-end;
 }
-/* margin-left: 70px;
-  display: inline-block;
-  
-    display: flex;
-  flex-direction: column;
-  gap: 20px;*/
+
 .project-links:focus .project-overlay {
   transform: translateY(0px);
 }
