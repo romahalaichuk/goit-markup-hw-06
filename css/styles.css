@@ -745,7 +745,7 @@ body {
   font-size: 14px;
   line-height: 1.172;
   color: var(--main-background-color);
-  margin: 0;
+  padding-top: 0;
 }
 
 .address {
@@ -787,7 +787,7 @@ body {
   border: 1px solid var(--newsletter-border);
   border-radius: 4px;
   margin: 0px;
-  padding: 0px;
+
   background-color: var(--mu-hero);
   font-weight: 400;
   font-size: 16px;
@@ -831,7 +831,6 @@ body {
 }
 
 .newsletter {
-  padding-bottom: 72px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -864,3 +863,167 @@ body {
   background: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
+/*====Modal form===*/
+.backdrop-data .backdrop-data__input {
+  border: 0;
+  margin-left: 40px;
+  background-color: transparent;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  width: 200px;
+}
+.backdrop-data .backdrop-data__input:focus {
+  outline: 0;
+}
+.backdrop-data .backdrop-data__input2:focus {
+  outline: 0;
+}
+.backdrop-data .backdrop-data__label {
+  position: absolute;
+  top: -24px;
+}
+.backdrop-data__legend {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.backdrop-data__fieldset {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  margin-block: 28px;
+  border-color: rgba(33, 33, 33, 0.2);
+}
+.backdrop-data__fieldset:hover .backdrop-data__icon {
+  fill: var(--focus-hover-color-text);
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-data__fieldset:focus-within .backdrop-data__icon {
+  fill: var(--focus-hover-color-text);
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-data__label {
+  position: absolute;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--adress-g);
+}
+.backdrop-data__icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  fill: var(--main-color);
+}
+.backdrop-data__legal-checkbox__button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--focus-hover-color-text);
+  border-radius: 4px;
+  margin-top: 30px;
+  font-family: Roboto;
+  color: var(--main-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.backdrop-data__legal-checkbox__icon {
+  height: 14px;
+  width: 14px;
+  background-color: var(--main-background-color);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  fill: var(--main-background-color);
+}
+
+.backdrop-data__legal-checkbox {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--adress-g);
+  position: relative;
+}
+
+.backdrop-data__legal-checkbox .backdrop-data__legal-checkbox-checkbox {
+  position: relative;
+  width: 16px;
+  height: 15px;
+}
+
+.backdrop-data__legal-checkbox input {
+  position: absolute;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.backdrop-data__legal-checkbox .backdrop-data__legal-checkbox__checkmark {
+  position: absolute;
+  height: 16px;
+  width: 15px;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  left: 0;
+}
+
+.backdrop-data__legal-checkbox__checkmark::after {
+  display: block;
+  border: 0px solid var(--main-background-color);
+  position: absolute;
+  display: none;
+  top: -4px;
+}
+
+.backdrop-data__legal-checkbox
+  input:checked
+  ~ .backdrop-data__legal-checkbox__checkmark::after {
+  display: block;
+}
+
+.backdrop-data__legal-checkbox
+  input:checked
+  ~ .backdrop-data__legal-checkbox__checkmark {
+  background-color: var(--focus-hover-background-color);
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-data__legal-checkbox__link {
+  color: var(--focus-hover-color-text);
+}
+
+/*====Modal form===*/

@@ -503,6 +503,87 @@
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
+        <form class="backdrop-data">
+          <h2 class="backdrop-data__legend">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <fieldset class="backdrop-data__fieldset">
+            <label class="backdrop-data__label" for="name">Imię</label>
+            <svg class="backdrop-data__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+            <input
+              class="backdrop-data__input"
+              type="text"
+              name="text"
+              id="name"
+              placeholder
+            />
+          </fieldset>
+
+          <fieldset class="backdrop-data__fieldset">
+            <label class="backdrop-data__label" for="phone">Telefon</label>
+            <svg class="backdrop-data__icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            <input
+              class="backdrop-data__input"
+              type="tel"
+              name="telephone"
+              id="phone"
+              placeholder
+            />
+          </fieldset>
+
+          <fieldset class="backdrop-data__fieldset">
+            <label class="backdrop-data__label" for="mail">Email</label>
+            <svg class="backdrop-data__icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input
+              class="backdrop-data__input"
+              type="email"
+              name="email"
+              id="mail"
+              placeholder
+            />
+          </fieldset>
+
+          <fieldset class="backdrop-data__fieldset2">
+            <label class="backdrop-data__label2" for="text">Komentarz</label>
+            <textarea
+              class="backdrop-data__input2"
+              rows="7"
+              name="feedback"
+              id="text"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </fieldset>
+          <label class="backdrop-data__legal-checkbox">
+            <input
+              class="backdrop-data__legal-checkbox-checkbox"
+              type="checkbox"
+              name="legal"
+              value="legal"
+            />
+            Oświadczam, że akceptuję
+            <a class="backdrop-data__legal-checkbox__link" href="#"
+              >Regulamin</a
+            >
+            i
+            <a class="backdrop-data__legal-checkbox__link" href="#"
+              >Politykę Prywatności</a
+            >
+            <span class="backdrop-data__legal-checkbox__checkmark">
+              <svg class="backdrop-data__legal-checkbox__icon">
+                <use href="./images/icons.svg/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+          <button type="submit" class="backdrop-data__legal-checkbox__button">
+            Wyślij
+          </button>
+        </form>
       </div>
     </div>
 
