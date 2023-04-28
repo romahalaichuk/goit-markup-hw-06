@@ -1,1 +1,1 @@
-https://romahalaichuk.github.io/goit-markup-hw-05/
+https://romahalaichuk.github.io/goit-markup-hw-06/
